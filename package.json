@@ -1,0 +1,46 @@
+{
+  "name": "my-extension",
+  "version": "1.0.0",
+  "description": "My Visual Studio Code Extension",
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc",
+    "prestart": "npm run compile"
+  },
+  "keywords": ["vscode", "extension"],
+  "author": "Srini",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": ["onCommand:extension.showHelloWorld"],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.showHelloWorld",
+        "title": "WF Harness"
+      }
+    ],
+    "views": {
+      "activitybar": [
+        {
+          "id": "myExtensionTreeView",
+          "name": "WF Harness",
+          "icon": "resources/icon.png"
+        }
+      ]
+    }
+  },
+  "viewsContainers": {
+    "activitybar": [
+      {
+        "id": "myExtensionTreeView",
+        "title": "My Extension",
+        "icon": "resources/icon3.svg"
+      }
+    ]
+  }
+}
