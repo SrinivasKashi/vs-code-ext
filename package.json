@@ -29,7 +29,7 @@
         {
           "id": "myExtensionTreeView",
           "name": "WF Harness",
-          "icon": "resources/icon.png"
+          "icon": "resources/logo.png"
         }
       ]
     }
@@ -39,7 +39,7 @@
       {
         "id": "myExtensionTreeView",
         "title": "My Extension",
-        "icon": "resources/icon3.svg"
+        "icon": "resources/logo.png"
       }
     ]
   }
