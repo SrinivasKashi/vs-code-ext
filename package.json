@@ -7,16 +7,23 @@
     "compile": "tsc",
     "prestart": "npm run compile"
   },
-  "keywords": ["vscode", "extension"],
+  "keywords": [
+    "vscode",
+    "extension"
+  ],
   "author": "Srini",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.3.5"
+    "axios": "^1.6.3",
+    "typescript": "^5.3.3",
+    "vscode": "^1.1.37"
   },
   "engines": {
     "vscode": "^1.60.0"
   },
-  "activationEvents": ["onCommand:extension.showHelloWorld"],
+  "activationEvents": [
+    "onCommand:extension.showHelloWorld"
+  ],
   "contributes": {
     "commands": [
       {
